@@ -13,8 +13,12 @@
 	height: 36px;
 }
 
-.image-section {
+.newimage-section {
 	display: none;
+}
+
+.image-section {
+	display: block;
 }
 
 .image-section .image {

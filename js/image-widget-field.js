@@ -52,6 +52,9 @@ function pcoImageWidget($) {
 					var sectionImage = $("#pco-image-" + data.target + " .image-section");
 					var sectionNewImage = $("#pco-image-" + data.target + " .newimage-section");
 					var imageField = $(sectionImage).find(".pco-image-id");
+					
+					// Trigger WP customizer
+					$(imageField).trigger('change');
 
 					//TODO more images attachmentIds.push(attachment.id);
 					// Change the src on the image chosen
@@ -97,12 +100,12 @@ function pcoImageWidget($) {
 			// Initialize all pco-image widgets: show or hide image/newImage
 			var imageFields = $(".pco-image");
 			$.each(imageFields, function() {
-				var sectionImage = $(this).find(".image-section");
-				var sectionNewImage = $(this).find(".newimage-section");
-				var imageField = $(sectionImage).find(".pco-image-id");
-
+				var sectionImage = $(".image-section", this);
+				var sectionNewImage = $(".newimage-section", this);
+				var imageField = $(".pco-image-id", sectionImage);
+				
 				// If there is an id show the image and hide the bigger button
-				if( imageField.val() > 0 ) {
+				if( sectionImage.val() > 0 ) {
 					sectionImage.show();
 					sectionNewImage.hide();
 				};
@@ -144,14 +147,21 @@ function pcoImageWidget($) {
 				e.preventDefault();
 
 				var data = $(this).data();
-				var target = data.target;
+				var target = "#pco-image-" + data.target;
+				
+				var imageField = target + " .image-section .pco-image-id";
+				var imageSection = target + " .image-section";
+				var imageNewSetion = target + " .newimage-section";
 
 				// Set the target value to 0
-				$("#pco-image-" + target + " .image-section .pco-image-id").val(0);
+				$(imageField).val(0);
 				// Hide image section as there now is no image
-				$("#pco-image-" + target + " .image-section").hide();
+				$(imageSection).hide();
 				// Show the newimage section as there now is no image
-				$("#pco-image-" + target + " .newimage-section").show();
+				$(imageNewSetion).show();
+				
+				// Trigger WP customizer
+				$(imageField).trigger('change');
 			});
 		}
 	};
