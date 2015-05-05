@@ -1,5 +1,5 @@
 {
-    "name": "Peytz-WordPress/pco-image-widget-field",
+    "name": "peytz-wordpress/pco-image-widget-field",
     "description": "An easy way to add an image field to your custom build widget.",
     "type": "wordpress-plugin",
     "keywords": ["wordpress", "plugin"],
