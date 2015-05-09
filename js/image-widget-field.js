@@ -1,7 +1,7 @@
 // Scripts file for the admin screens
 
 jQuery(document).ready(function($) {
-	pcoImageWidget($); 
+	pcoImageWidget($);
 });
 
 function pcoImageWidget($) {
@@ -103,7 +103,7 @@ function pcoImageWidget($) {
 				var sectionImage = $(".image-section", this);
 				var sectionNewImage = $(".newimage-section", this);
 				var imageField = $(".pco-image-id", sectionImage);
-				
+
 				// If there is an id show the image and hide the bigger button
 				if( sectionImage.val() > 0 ) {
 					sectionImage.show();
