@@ -52,7 +52,7 @@ function pcoImageWidget($) {
 					var sectionImage = $("#pco-image-" + data.target + " .image-section");
 					var sectionNewImage = $("#pco-image-" + data.target + " .newimage-section");
 					var imageField = $(sectionImage).find(".pco-image-id");
-					
+
 					// Trigger WP customizer
 					$(imageField).trigger('change');
 
@@ -68,7 +68,7 @@ function pcoImageWidget($) {
 					if( imageField.val() > 0 ) {
 						sectionImage.show();
 						sectionNewImage.hide();
-					};
+					}
 				}
 			});
 
@@ -108,7 +108,7 @@ function pcoImageWidget($) {
 				if( sectionImage.val() > 0 ) {
 					sectionImage.show();
 					sectionNewImage.hide();
-				};
+				}
 			});
 
 			// Make sure the markup stays the same even after a click on the save button
@@ -148,7 +148,7 @@ function pcoImageWidget($) {
 
 				var data = $(this).data();
 				var target = "#pco-image-" + data.target;
-				
+
 				var imageField = target + " .image-section .pco-image-id";
 				var imageSection = target + " .image-section";
 				var imageNewSetion = target + " .newimage-section";
@@ -159,7 +159,7 @@ function pcoImageWidget($) {
 				$(imageSection).hide();
 				// Show the newimage section as there now is no image
 				$(imageNewSetion).show();
-				
+
 				// Trigger WP customizer
 				$(imageField).trigger('change');
 			});
@@ -170,4 +170,3 @@ function pcoImageWidget($) {
 
 	pcoImage.init(selectors);
 }
-
