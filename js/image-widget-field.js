@@ -108,7 +108,7 @@ function pcoImageWidget($) {
 				var imageField      = $( '.pco-image-id', sectionImage );
 
 				// If there is an id show the image and hide the bigger button
-				if ( sectionImage.val() > 0 ) {
+				if ( imageField.val() > 0 ) {
 					sectionImage.show();
 					sectionNewImage.hide();
 				}
