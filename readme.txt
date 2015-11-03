@@ -19,6 +19,7 @@ By calling `pco_image_field()` inside your widget's form() function, you will be
 = Translations =
 * Standard English by [compute](http://profiles.wordpress.org/compute)
 * Danish by [compute](http://profiles.wordpress.org/compute)
+* German by [dbanck](https://github.com/dbanck)
 
 There are just a few strings to translate. However, it would be great to have more languages available. Please [contact us](mailto:wordpress@peytz.dk) to add your translation to the plugin!
 
