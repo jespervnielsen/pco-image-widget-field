@@ -1,9 +1,9 @@
-=== Pco Image Widget Field ===
+=== PCo Image Widget Field ===
 Contributors: PeytzCo, Compute, jamesbonham
 Tags: image, upload, widget
 Requires at least: 3.5
 Tested up to: 4.2
-Stable tag: 1.1.1
+Stable tag: 1.1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,7 +12,7 @@ Easily add image fields to your custom widgets.
 == Description ==
 
 = Features =
-Pco Image Widget Field allows developers to add multiple image fields to custom widgets.
+PCo Image Widget Field allows developers to add multiple image fields to custom widgets.
 
 By calling `pco_image_field()` inside your widget's form() function, you will be able to give your users a way to add images via the WordPress Media Frame.
 
@@ -27,7 +27,7 @@ Contribute to [this project](https://github.com/Peytz-WordPress/pco-image-widget
 == Installation ==
 
 1. Add the plugin by either downloading the folder and uploading it to the wp-content/plugins directory or install it from the Control Panel using Plugins->Add New.
-1. Activate Pco Image Widget Field from the Plugins menu using Plugins->Installed Plugins.
+1. Activate PCo Image Widget Field from the Plugins menu using Plugins->Installed Plugins.
 1. Put `pco_image_field( $this, $instance );` inside your Widget's form() method.
 
 = Configuration =
@@ -93,6 +93,9 @@ Please add a new ticket inside our support forum and tell us about the feature r
 4. And output the image in your widget.
 
 == Changelog ==
+
+= 1.1.2 =
+* Adds german translations (props [@dbanck](https://github.com/dbanck), [#5](https://github.com/Peytz-WordPress/pco-image-widget-field/pull/5)
 
 = 1.1.1 =
 * Fixes display of inputs
