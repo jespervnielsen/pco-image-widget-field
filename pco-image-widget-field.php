@@ -1,9 +1,9 @@
 <?php
 /*
-Plugin Name: Pco Image Widget Field
+Plugin Name: PCo Image Widget Field
 Plugin URI: http://peytz.dk/medarbejdere/
 Description: An easy way to add an image field to your custom build widget.
-Version: 1.1.1
+Version: 1.1.2
 Author: Peytz (Patrick Hesselberg & James Bonham)
 Author URI: http://peytz.dk/medarbejdere/
 */
