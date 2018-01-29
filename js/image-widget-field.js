@@ -21,6 +21,9 @@ function pcoImageWidget($) {
 				button: { text: data.update },
 				multiple: false
 			});
+			
+			// Enable the additional media filters. We do it the same way as CMB2 https://github.com/CMB2/CMB2/issues/873
+			this._frame.states.first().set( 'filterable', 'all' );
 
 			// On specific events
 			this._frame.on( 'open', this.updateFrame );
